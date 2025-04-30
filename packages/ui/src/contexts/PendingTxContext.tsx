@@ -265,6 +265,7 @@ interface getTxsByDateArgs {
   chainInfo: ChainInfoHuman
   currentProxy?: string
 }
+
 const getTxsByDate = async ({
   api,
   client,
@@ -403,6 +404,7 @@ const PendingTxsContextProvider = ({ children }: PendingTxContextProps) => {
 
       !forPplChain && setIsLoading(true)
       forPplChain && setIsLoadingPpl(true)
+
       const newTxs = await getTxsByDate({
         api: apiToUse,
         client: clientToUse,
@@ -410,6 +412,7 @@ const PendingTxsContextProvider = ({ children }: PendingTxContextProps) => {
         chainInfo: chainInfoToUse,
         currentProxy: selectedMultiProxy?.proxy
       })
+
       !forPplChain && setIsLoading(false)
       forPplChain && setIsLoadingPpl(false)
       forPplChain ? setPplTxByDate(newTxs) : setTxByDate(newTxs)
