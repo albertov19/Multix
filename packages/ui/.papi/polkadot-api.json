@@ -20,7 +20,7 @@
     "ksmPpl": {
       "chain": "ksmcc3_people",
       "metadata": ".papi/metadata/ksmPpl.scale",
-      "genesis": "0xc1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f"
+      "genesis": "0x4545454545454545454545454545454545454545454545454545454545454545"
     },
     "dotPpl": {
       "chain": "polkadot_people",
