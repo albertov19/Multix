@@ -417,6 +417,17 @@ export const networkList: Record<string, NetworkInfo> = {
     descriptor: 'polimec',
     genesisHash: '0x7eb9354488318e7549c722669dcbdcdc526f1fef1420e7944667212f3601fdbd'
   },
+  /*tanssi: {
+    chainId: 'tanssi',
+    explorerNetworkName: 'tanssi',
+    rpcUrls: [
+      tbd,
+    ],
+    httpGraphqlUrl: HTTP_GRAPHQL_URL,
+    networkLogo: tanssiSVG,
+    descriptor: 'tanssi',
+    genesisHash: 'tbd'
+  },*/
   dancelight: {
     chainId: 'dancelight',
     explorerNetworkName: 'dancelight',
@@ -448,6 +459,7 @@ export const polkadotNetworksAndParachains: Partial<keyof typeof networkList>[] 
   // 'astar',
   'bifrost-dot',
   'hydration',
+  // 'kilt',
   // 'interlay',
   // 'moonbeam',
   // 'pendulum',
