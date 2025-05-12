@@ -61,6 +61,7 @@ export interface AccountRegistration {
 import {
   acala,
   bifrostDot,
+  dancelight,
   dot,
   dotAssetHub,
   hydration,
@@ -81,6 +82,7 @@ import {
 export const DESCRIPTORS = {
   acala,
   bifrostDot,
+  dancelight,
   dot,
   dotAssetHub,
   hydration,
@@ -101,8 +103,9 @@ export const DESCRIPTORS = {
 export const DESCRIPTORS_NOT_HYDRATION_1_3 = {
   acala,
   bifrostDot,
+  dancelight,
   dot,
-  dotAssetHub
+  dotAssetHub,
 } as const
 
 export const DESCRIPTORS_NOT_HYDRATION_2_3 = {
@@ -132,7 +135,7 @@ export const DESCRIPTORS_RELAYS = {
   westend
 }
 
-export const DESCRIPTORS_1_3 = { acala, bifrostDot, dot, dotAssetHub, hydration } as const
+export const DESCRIPTORS_1_3 = { acala, bifrostDot, dancelight, dot, dotAssetHub, hydration } as const
 export const DESCRIPTORS_2_3 = { ksm, ksmAssetHub, paseo, phala } as const
 export const DESCRIPTORS_3_3 = { polimec, coretimeDot, westend, wesAssetHub } as const
 

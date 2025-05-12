@@ -18,6 +18,7 @@ import { nodesWestendColourSVG } from './logos/westend_colourSVG'
 import { chainsAcalaSVG } from './logos/acalaSVG'
 import { nodesBifrostSVG } from './logos/bifrostSVG'
 import paseoSVG from './logos/paseoSVG.svg'
+import dancelightSVG from './logos/dancelightSVG.svg'
 import { nodesCoretimeSVG } from './logos/coretimeSVG'
 import { polimecSVG } from './logos/polimecSVG'
 import usdc from './logos/usdc.svg'
@@ -416,6 +417,17 @@ export const networkList: Record<string, NetworkInfo> = {
     descriptor: 'polimec',
     genesisHash: '0x7eb9354488318e7549c722669dcbdcdc526f1fef1420e7944667212f3601fdbd'
   },
+  dancelight: {
+    chainId: 'dancelight',
+    explorerNetworkName: 'dancelight',
+    rpcUrls: [
+      'wss://dancelight.tanssi-api.network',
+    ],
+    httpGraphqlUrl: HTTP_GRAPHQL_URL,
+    networkLogo: dancelightSVG,
+    descriptor: 'dancelight',
+    genesisHash: '0x983a1a72503d6cc3636776747ec627172b51272bf45e50a355348facb67a820a'
+  },
   local: {
     chainId: import.meta.env.VITE_CHAIN_ID,
     explorerNetworkName: import.meta.env.VITE_NETWORK_NAME as 'kusama',
@@ -437,7 +449,6 @@ export const polkadotNetworksAndParachains: Partial<keyof typeof networkList>[] 
   'bifrost-dot',
   'hydration',
   // 'interlay',
-  // 'kilt',
   // 'moonbeam',
   // 'pendulum',
   'phala',
@@ -461,7 +472,8 @@ export const testChains: Partial<keyof typeof networkList>[] = [
   // 'rhala testnet',
   'westend',
   'asset-hub-westend',
-  'local'
+  'local',
+  'dancelight',
 ]
 
 export type SupportedNetworks = keyof typeof networkList
