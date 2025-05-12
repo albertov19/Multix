@@ -20,7 +20,7 @@
     "ksmPpl": {
       "chain": "ksmcc3_people",
       "metadata": ".papi/metadata/ksmPpl.scale",
-      "genesis": "0xc1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f"
+      "genesis": "0x4545454545454545454545454545454545454545454545454545454545454545"
     },
     "dotPpl": {
       "chain": "polkadot_people",
@@ -86,6 +86,11 @@
       "chain": "westend2_asset_hub",
       "metadata": ".papi/metadata/wesAssetHub.scale",
       "genesis": "0x67f9723393ef76214df0118c34bbbd3dbebc8ed46a10973a8c969d48fe7598c9"
+    },
+    "dancelight": {
+      "wsUrl": "wss://dancelight.tanssi-api.network",
+      "metadata": ".papi/metadata/dancelight.scale",
+      "genesis": "0x983a1a72503d6cc3636776747ec627172b51272bf45e50a355348facb67a820a"
     }
   }
 }

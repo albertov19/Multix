@@ -62,6 +62,8 @@ deploy:
       cmd: ['sqd', 'start-coretime-polkadot']
     - name: polimec-processor
       cmd: ['sqd', 'start-polimec']
+    - name: dancelight-processor
+      cmd: ['sqd', 'start-dancelight']
   # api:
   #   env:
   # SQD_DEBUG: sqd:graphql-server
