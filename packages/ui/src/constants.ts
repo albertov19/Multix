@@ -431,9 +431,7 @@ export const networkList: Record<string, NetworkInfo> = {
   dancelight: {
     chainId: 'dancelight',
     explorerNetworkName: 'dancelight',
-    rpcUrls: [
-      'wss://dancelight.tanssi-api.network',
-    ],
+    rpcUrls: ['wss://dancelight.tanssi-api.network'],
     httpGraphqlUrl: HTTP_GRAPHQL_URL,
     networkLogo: dancelightSVG,
     descriptor: 'dancelight',
@@ -485,7 +483,7 @@ export const testChains: Partial<keyof typeof networkList>[] = [
   'westend',
   'asset-hub-westend',
   'local',
-  'dancelight',
+  'dancelight'
 ]
 
 export type SupportedNetworks = keyof typeof networkList
