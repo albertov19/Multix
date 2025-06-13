@@ -422,7 +422,7 @@ tanssi: {
     chainId: 'tanssi',
     explorerNetworkName: 'tanssi',
     rpcUrls: [
-      'wss://tanssi.tanssi-api.network',
+      'wss://tanssi.tanssi-mainnet.network',
     ],
     httpGraphqlUrl: HTTP_GRAPHQL_URL,
     networkLogo: tanssiSVG,
