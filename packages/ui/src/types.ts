@@ -77,7 +77,10 @@ import {
   ksmPpl,
   pasPpl,
   wesPpl,
-  tanssi
+  tanssi,
+  moonbeam,
+  moonriver,
+  moonbase
 } from '@polkadot-api/descriptors'
 
 export const DESCRIPTORS = {
@@ -99,7 +102,10 @@ export const DESCRIPTORS = {
   ksmPpl,
   pasPpl,
   wesPpl,
-  tanssi
+  tanssi,
+  moonbeam,
+  moonriver,
+  moonbase
 } as const
 
 export const DESCRIPTORS_NOT_HYDRATION_1_3 = {
@@ -122,7 +128,10 @@ export const DESCRIPTORS_NOT_HYDRATION_3_3 = {
   polimec,
   coretimeDot,
   westend,
-  wesAssetHub
+  wesAssetHub,
+  moonbase,
+  moonriver,
+  moonbeam
 } as const
 
 export const DESCRIPTORS_ASSET_HUBS = {

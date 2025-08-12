@@ -1,7 +1,7 @@
 // import { nodesAstarPNG } from './logos/astarPNG'
 // import { nodesInterlaySVG } from './logos/interlaySVG'
-// import { nodesMoonriverSVG } from './logos/moonriverSVG'
-// import { nodesMoonbeamSVG } from './logos/moonbeamSVG'
+import { nodesMoonriverSVG } from './logos/moonriverSVG'
+import { nodesMoonbeamSVG } from './logos/moonbeamSVG'
 // import { nodesKiltPNG } from './logos/kiltPNG'
 // import { chainsPendulumSVG } from './logos/pendulumSVG'
 // import { chainsAmplitudeSVG } from './logos/amplitudeSVG'
@@ -51,7 +51,7 @@ export interface NetworkInfo {
   genesisHash?: string
 }
 
-export const HTTP_GRAPHQL_URL = `https://multix.squids.live/multix-arrow@v7/api/graphql`
+export const HTTP_GRAPHQL_URL = `http://localhost:4350/graphql`
 
 export const PAYMENT_INFO_ACCOUNT = '5CXQZrh1MSgnGGCdJu3tqvRfCv7t5iQXGGV9UKotrbfhkavs'
 
@@ -274,20 +274,22 @@ export const networkList: Record<string, NetworkInfo> = {
   //   networkLogo: nodesKhalaSVG,
   //   descriptor: 'khala'
   // },
-  // moonbeam: {
-  //   chainId: 'moonbeam',
-  //   explorerNetworkName: 'moonbeam',
-  //   rpcUrls: ['wss://moonbeam-rpc.dwellir.com'],
-  //   httpGraphqlUrl: HTTP_GRAPHQL_URL,
-  //   logo: nodesMoonbeamSVG
-  // },
-  // moonriver: {
-  //   chainId: 'moonriver',
-  //   explorerNetworkName: 'moonriver',
-  //   rpcUrls: ['wss://moonriver-rpc.dwellir.com'],
-  //   httpGraphqlUrl: HTTP_GRAPHQL_URL,
-  //   logo: nodesMoonriverSVG
-  // },
+  moonbeam: {
+    chainId: 'moonbeam',
+    explorerNetworkName: 'moonbeam',
+    rpcUrls: ['wss://moonbeam-rpc.dwellir.com'],
+    httpGraphqlUrl: HTTP_GRAPHQL_URL,
+    networkLogo: nodesMoonbeamSVG,
+    descriptor: 'moonbeam',
+  },
+  moonriver: {
+    chainId: 'moonriver',
+    explorerNetworkName: 'moonriver',
+    rpcUrls: ['wss://moonriver-rpc.dwellir.com'],
+    httpGraphqlUrl: HTTP_GRAPHQL_URL,
+    networkLogo: nodesMoonriverSVG,
+    descriptor: 'moonriver',
+  },
   phala: {
     chainId: 'phala',
     explorerNetworkName: 'phala',
@@ -429,6 +431,15 @@ export const networkList: Record<string, NetworkInfo> = {
     descriptor: 'dancelight',
     genesisHash: '0x983a1a72503d6cc3636776747ec627172b51272bf45e50a355348facb67a820a'
   },
+  moonbase: {
+    chainId: 'moonbase',
+    explorerNetworkName: 'moonbase',
+    rpcUrls: ['wss://wss.api.moonbase.moonbeam.network'],
+    httpGraphqlUrl: HTTP_GRAPHQL_URL,
+    networkLogo: dancelightSVG,
+    descriptor: 'dancelight',
+    genesisHash: '0x91bc6e169807aaa54802737e1c504b2577d4fafedd5a02c10293b1cd60e39527'
+  },
   local: {
     chainId: import.meta.env.VITE_CHAIN_ID,
     explorerNetworkName: import.meta.env.VITE_NETWORK_NAME as 'kusama',
@@ -451,7 +462,7 @@ export const polkadotNetworksAndParachains: Partial<keyof typeof networkList>[] 
   'hydration',
   // 'interlay',
   // 'kilt',
-  // 'moonbeam',
+  'moonbeam',
   // 'pendulum',
   'phala',
   'polimec'
@@ -459,11 +470,11 @@ export const polkadotNetworksAndParachains: Partial<keyof typeof networkList>[] 
 ]
 export const kusamaNetworksAndParachains: Partial<keyof typeof networkList>[] = [
   'kusama',
-  'asset-hub-kusama'
+  'asset-hub-kusama',
   // 'coretime-kusama'
   // 'amplitude',
   // 'khala'
-  // 'moonriver'
+  'moonriver'
 ]
 export const soloChains: Partial<keyof typeof networkList>[] = ['tanssi']
 export const testChains: Partial<keyof typeof networkList>[] = [
@@ -472,7 +483,8 @@ export const testChains: Partial<keyof typeof networkList>[] = [
   'westend',
   'asset-hub-westend',
   'local',
-  'dancelight'
+  'dancelight',
+  'moonbase'
 ]
 
 export type SupportedNetworks = keyof typeof networkList

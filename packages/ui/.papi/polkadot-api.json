@@ -115,6 +115,24 @@
       "metadata": ".papi/metadata/tanssi.scale",
       "genesis": "0xdd6d086f75ec041b66e20c4186d327b23c8af244c534a2418de6574e8c041a60",
       "codeHash": "0x344ee4c20917f15a2f385157a446d72c6db015b52389cc324e6a6996d627ae23"
+    },
+    "moonbase": {
+      "wsUrl": "wss://wss.api.moonbase.moonbeam.network",
+      "metadata": ".papi/metadata/moonbase.scale",
+      "genesis": "0x91bc6e169807aaa54802737e1c504b2577d4fafedd5a02c10293b1cd60e39527",
+      "codeHash": "0x9b2237723fa89375ced03e83281b18d02a480cb5aa00283d42796248e7303590"
+    },
+    "moonriver": {
+      "wsUrl": "wss://wss.api.moonriver.moonbeam.network",
+      "metadata": ".papi/metadata/moonriver.scale",
+      "genesis": "0x401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
+      "codeHash": "0x31bd0b9046cd56f6837b2276f1f686e9f83233ef08574000ef6c3a105c317abe"
+    },
+    "moonbeam": {
+      "wsUrl": "wss://wss.api.moonbeam.network",
+      "metadata": ".papi/metadata/moonbeam.scale",
+      "genesis": "0xfe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+      "codeHash": "0x802c6b285502245d97dc73bdb164c128b9c7794637c67a3f23a105327d5566d2"
     }
   }
 }
